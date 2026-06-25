@@ -93,10 +93,12 @@
 
 /* ===== BASE STYLES ===== */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 }
 
 html {
@@ -111,6 +113,38 @@ body {
   color: var(--color-text-primary);
   line-height: 1.6;
   overflow-x: hidden;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+/* ===== RESPONSIVE CONTAINER ===== */
+
+.responsive-container {
+  max-width: 1440px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===== SAFE OVERFLOW ===== */
+
+.safe-overflow {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* ===== RESPONSIVE TYPOGRAPHY ===== */
+
+.text-clamp-hero {
+  font-size: clamp(1.875rem, 4vw + 0.5rem, 3.75rem);
+}
+
+.text-clamp-section {
+  font-size: clamp(1.5rem, 2.5vw + 0.5rem, 2.25rem);
+}
+
+.text-clamp-card {
+  font-size: clamp(0.875rem, 1.5vw + 0.25rem, 1.125rem);
 }
 
 /* ===== SCROLLBAR ===== */

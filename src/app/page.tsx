@@ -88,7 +88,6 @@ export default function LandingPage() {
 
       {/* Hero */}
       <section className="relative pt-28 pb-16 sm:pt-40 lg:pt-48 sm:pb-24">
-        {/* Background Effects */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] rounded-full bg-primary/5 blur-[120px]" />
           <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] rounded-full bg-purple-500/5 blur-[120px]" />
@@ -139,7 +138,7 @@ export default function LandingPage() {
             initial={{ opacity: 0, y: 60 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="mt-20 relative"
+            className="mt-20 relative overflow-hidden"
           >
             <div className="gradient-border p-1 rounded-2xl shadow-2xl">
               <div className="rounded-xl bg-bg-card p-2 sm:p-4">
@@ -259,7 +258,7 @@ export default function LandingPage() {
             initial="initial"
             whileInView="animate"
             viewport={{ once: true, margin: "-100px" }}
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
           >
             {stakeholders.map((item) => (
               <motion.div
@@ -316,7 +315,7 @@ export default function LandingPage() {
                   </Button>
                 </Link>
               </div>
-              <div className="flex items-center justify-center gap-6 pt-4 text-sm text-text-muted">
+              <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 pt-4 text-sm text-text-muted">
                 <span className="flex items-center gap-1.5"><CheckCircle2 className="h-4 w-4 text-emerald-400" /> Free 30-day trial</span>
                 <span className="flex items-center gap-1.5"><CheckCircle2 className="h-4 w-4 text-emerald-400" /> No credit card</span>
                 <span className="flex items-center gap-1.5"><CheckCircle2 className="h-4 w-4 text-emerald-400" /> Enterprise ready</span>

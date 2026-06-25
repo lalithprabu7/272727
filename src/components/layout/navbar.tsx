@@ -42,7 +42,7 @@ export function Navbar() {
         <Search className="h-4 w-4 shrink-0" />
         <span className="hidden sm:inline">Search everything...</span>
         <span className="sm:hidden">Search...</span>
-        <kbd className="ml-auto hidden rounded bg-bg-card px-1.5 py-0.5 text-[10px] font-mono font-medium text-text-muted border border-border-default sm:inline-flex items-center gap-0.5">
+        <kbd className="ml-auto hidden sm:inline-flex rounded bg-bg-card px-1.5 py-0.5 text-[10px] font-mono font-medium text-text-muted border border-border-default items-center gap-0.5">
           <Command className="h-2.5 w-2.5" />K
         </kbd>
       </button>
